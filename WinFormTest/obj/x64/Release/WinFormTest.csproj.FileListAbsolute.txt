@@ -1,0 +1,12 @@
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\WinFormTest.exe.config
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\WinFormTest.exe
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\WinFormTest.pdb
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.Form1.resources
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.Properties.Resources.resources
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.csproj.GenerateResource.cache
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.csproj.CoreCompileInputs.cache
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.exe
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.pdb
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\tflibWrapperPlus.dll
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\tflibWrapperSharp.dll
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.csproj.CopyComplete

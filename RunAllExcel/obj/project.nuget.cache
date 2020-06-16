@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "dgSpecHash": "MV6srKhdLQPElHjikGjTe+PzTdzHhmA4aZ3edmq0eJaZRbSIdFodTnfblHWfs0X2trjctH/fTdPCdgcdc7jYBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tlong\\.nuget\\packages\\envdte\\8.0.2\\envdte.8.0.2.nupkg.sha512",
+    "C:\\Users\\tlong\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\tlong\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\tlong\\.nuget\\packages\\stdole\\7.0.3302\\stdole.7.0.3302.nupkg.sha512",
+    "C:\\Users\\tlong\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EnvDTE 8.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "EnvDTE",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'stdole 7.0.3302' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "stdole",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
