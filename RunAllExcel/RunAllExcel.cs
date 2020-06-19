@@ -6,11 +6,34 @@ using System.Linq;
 using ToFCamera.Wrapper;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 //Today(2020 year) it's nuGet package System.Drawing.Common.dll. To add it: right click on project name (at solution explorer) --> "Manage NuGet packages" --> choose "Browse" label at the top --> search for "System.Drawing.Common" --> install it.
 
 
 namespace RunAllExcel
 {
+    static class MyExtension
+    {
+        public static Random rng = new Random();
+
+        public static void Shuffle<T>(this IList<T> list)
+        {
+            RNGCryptoServiceProvider provider = new RNGCryptoServiceProvider();
+            int n = list.Count;
+            while (n > 1)
+            {
+                byte[] box = new byte[1];
+                do provider.GetBytes(box);
+                while (!(box[0] < n * (Byte.MaxValue / n)));
+                int k = (box[0] % n);
+                n--;
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
+        }
+    }
+
     class RunAllExcel
     {
         public const int TFL_FRAME_SIZE = 640 * 480;
@@ -391,7 +414,7 @@ namespace RunAllExcel
             InsertPicture(xlWorkSheet, row, PEO_COL, peoDtc);
         }
 
-        public static void Scan(Excel.Worksheet xlWorkSheet, string peoleRawDir)
+        public static void Scan(Excel.Worksheet xlWorkSheet, string peoleRawDir, bool shuffle)
         {
             string[] peoRawfilePaths = Directory.GetFiles(peoleRawDir, "*.raw", SearchOption.TopDirectoryOnly);
             PeopleDetector peoDtc = new PeopleDetector();
@@ -421,11 +444,30 @@ namespace RunAllExcel
                 default:
                     break;
             }
-            for (int i = 0; i < peoRawfilePaths.Count(); i++)
+            if(shuffle)
             {
-                string peoRawFileName = Path.GetFileName(peoRawfilePaths[i]);
-                ExeRun(xlWorkSheet, row, peoDtc, peoleRawDir, peoRawFileName, MAX_DTC_NUM);
-                row++;
+                List<string> fileNameList = new List<string>();
+
+                for (int i = 0; i < peoRawfilePaths.Count(); i++)
+                {
+                    string peoRawFileName = Path.GetFileName(peoRawfilePaths[i]);
+                    fileNameList.Add(peoRawFileName);
+                }
+                MyExtension.Shuffle(fileNameList);
+
+                for (int i = 0; i < fileNameList.Count(); i++)
+                {
+                    ExeRun(xlWorkSheet, row, peoDtc, peoleRawDir, fileNameList[i], MAX_DTC_NUM);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < peoRawfilePaths.Count(); i++)
+                {
+                    string peoRawFileName = Path.GetFileName(peoRawfilePaths[i]);
+                    ExeRun(xlWorkSheet, row, peoDtc, peoleRawDir, peoRawFileName, MAX_DTC_NUM);
+                    row++;
+                }
             }
         }
 
@@ -517,11 +559,19 @@ namespace RunAllExcel
             WriteWorkSheet(xlWorkSheet5);
 
             // Scan people raw folder
-            Scan(xlWorkSheet1, PEOPLE_RAW_DIR_0v1);
-            Scan(xlWorkSheet2, PEOPLE_RAW_DIR_0);
-            Scan(xlWorkSheet3, PEOPLE_RAW_DIR_30);
-            Scan(xlWorkSheet4, PEOPLE_RAW_DIR_60);
-            Scan(xlWorkSheet5, PEOPLE_RAW_DIR_90);
+            bool shuffle = false;
+            if (args.Length != 0)
+            {
+                if (args[0] == "-shuffle" || args[0] == "-s")
+                {
+                    shuffle = true;
+                }
+            }
+            Scan(xlWorkSheet1, PEOPLE_RAW_DIR_0v1, shuffle);
+            Scan(xlWorkSheet2, PEOPLE_RAW_DIR_0, shuffle);
+            Scan(xlWorkSheet3, PEOPLE_RAW_DIR_30, shuffle);
+            Scan(xlWorkSheet4, PEOPLE_RAW_DIR_60, shuffle);
+            Scan(xlWorkSheet5, PEOPLE_RAW_DIR_90, shuffle);
             WriteAvgRuntime(xlWorkSheet6);
 
             // Save workbook

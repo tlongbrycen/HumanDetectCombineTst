@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj": {}
+    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj": {
+    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj",
+        "projectUniqueName": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj",
         "projectName": "RunAllExcel",
-        "projectPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj",
+        "projectPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllExcel\\RunAllExcel.csproj",
         "packagesPath": "C:\\Users\\tlong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllExcel\\obj\\",
+        "outputPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllExcel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

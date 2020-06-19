@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj": {}
+    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj": {
+    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj",
+        "projectUniqueName": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj",
         "projectName": "TestcaseSimple",
-        "projectPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj",
+        "projectPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\TestcaseSimple\\TestcaseSimple.csproj",
         "packagesPath": "C:\\Users\\tlong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\TestcaseSimple\\obj\\",
+        "outputPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\TestcaseSimple\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
