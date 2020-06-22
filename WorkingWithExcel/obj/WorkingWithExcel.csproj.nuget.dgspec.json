@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj": {}
+    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj": {
+    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj",
+        "projectUniqueName": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj",
         "projectName": "WorkingWithExcel",
-        "projectPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj",
+        "projectPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\WorkingWithExcel\\WorkingWithExcel.csproj",
         "packagesPath": "C:\\Users\\tlong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\WorkingWithExcel\\obj\\",
+        "outputPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\WorkingWithExcel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

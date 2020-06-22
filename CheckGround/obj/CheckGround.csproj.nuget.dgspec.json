@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj": {}
+    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj": {
+    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj",
+        "projectUniqueName": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj",
         "projectName": "CheckGround",
-        "projectPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj",
+        "projectPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\CheckGround\\CheckGround.csproj",
         "packagesPath": "C:\\Users\\tlong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\CheckGround\\obj\\",
+        "outputPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\CheckGround\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

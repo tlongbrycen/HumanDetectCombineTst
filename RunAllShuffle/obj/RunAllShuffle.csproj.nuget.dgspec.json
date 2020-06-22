@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj": {}
+    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj": {
+    "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj",
+        "projectUniqueName": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj",
         "projectName": "RunAllShuffle",
-        "projectPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj",
+        "projectPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllShuffle\\RunAllShuffle.csproj",
         "packagesPath": "C:\\Users\\tlong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tlong\\source\\repos\\HumanDetectCombineTst\\RunAllShuffle\\obj\\",
+        "outputPath": "C:\\Users\\tlong\\Source\\Repos\\HumanDetectCombineTst\\RunAllShuffle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

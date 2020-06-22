@@ -10,3 +10,4 @@ C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\Wi
 C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\tflibWrapperPlus.dll
 C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\bin\x64\Release\tflibWrapperSharp.dll
 C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.csproj.CopyComplete
+C:\Users\tlong\Source\Repos\HumanDetectCombineTst\WinFormTest\obj\x64\Release\WinFormTest.csprojAssemblyReference.cache

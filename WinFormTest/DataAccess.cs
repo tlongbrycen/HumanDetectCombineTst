@@ -24,10 +24,10 @@ namespace WinFormTest
 
         public DataAccess()
         {
-            pplDtc = new PeopleDetector();
-            initDepth_buf = new ushort[TFL_FRAME_SIZE];
-            Depth_buf = new ushort[TFL_FRAME_SIZE];
-            groundCloud = new List<TFL_PointXYZ>();
+            pplDtc = null;
+            initDepth_buf = null;
+            Depth_buf = null;
+            groundCloud = null;
         }
 
         public void ReadRaw(string fileName, ushort[] depthBuf)

@@ -29,6 +29,17 @@
         private void InitializeComponent()
         {
             this.simpleTestBox = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtWhiteHeight = new System.Windows.Forms.TextBox();
+            this.txtGrayHeight = new System.Windows.Forms.TextBox();
+            this.txtBlueHeight = new System.Windows.Forms.TextBox();
+            this.txtGreenHeight = new System.Windows.Forms.TextBox();
+            this.txtRedHeight = new System.Windows.Forms.TextBox();
+            this.ptbWhitePerson = new System.Windows.Forms.PictureBox();
+            this.ptbGrayPerson = new System.Windows.Forms.PictureBox();
+            this.ptbBluePerson = new System.Windows.Forms.PictureBox();
+            this.ptbGreenPerson = new System.Windows.Forms.PictureBox();
+            this.ptbRedPerson = new System.Windows.Forms.PictureBox();
             this.btnGetNumPeople = new System.Windows.Forms.Button();
             this.txtNumPeople = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,31 +73,26 @@
             this.label9 = new System.Windows.Forms.Label();
             this.ptbDetectedPeople = new System.Windows.Forms.PictureBox();
             this.btnShowDetectedPeople = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ptbRedPerson = new System.Windows.Forms.PictureBox();
-            this.ptbGreenPerson = new System.Windows.Forms.PictureBox();
-            this.ptbBluePerson = new System.Windows.Forms.PictureBox();
-            this.ptbGrayPerson = new System.Windows.Forms.PictureBox();
-            this.ptbWhitePerson = new System.Windows.Forms.PictureBox();
-            this.txtRedHeight = new System.Windows.Forms.TextBox();
-            this.txtGreenHeight = new System.Windows.Forms.TextBox();
-            this.txtBlueHeight = new System.Windows.Forms.TextBox();
-            this.txtGrayHeight = new System.Windows.Forms.TextBox();
-            this.txtWhiteHeight = new System.Windows.Forms.TextBox();
+            this.btnGroundNull = new System.Windows.Forms.Button();
+            this.btnPeopleNULL = new System.Windows.Forms.Button();
+            this.btnNewDetector = new System.Windows.Forms.Button();
             this.simpleTestBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbWhitePerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbGrayPerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBluePerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbGreenPerson)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRedPerson)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbGnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbPeople)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDetectedPeople)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbRedPerson)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbGreenPerson)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbBluePerson)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbGrayPerson)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbWhitePerson)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleTestBox
             // 
+            this.simpleTestBox.Controls.Add(this.btnNewDetector);
+            this.simpleTestBox.Controls.Add(this.btnPeopleNULL);
+            this.simpleTestBox.Controls.Add(this.btnGroundNull);
             this.simpleTestBox.Controls.Add(this.groupBox1);
             this.simpleTestBox.Controls.Add(this.btnGetNumPeople);
             this.simpleTestBox.Controls.Add(this.txtNumPeople);
@@ -117,10 +123,104 @@
             this.simpleTestBox.Controls.Add(this.gndRawTxt);
             this.simpleTestBox.Location = new System.Drawing.Point(12, 12);
             this.simpleTestBox.Name = "simpleTestBox";
-            this.simpleTestBox.Size = new System.Drawing.Size(483, 531);
+            this.simpleTestBox.Size = new System.Drawing.Size(582, 531);
             this.simpleTestBox.TabIndex = 0;
             this.simpleTestBox.TabStop = false;
             this.simpleTestBox.Text = "Control Board";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtWhiteHeight);
+            this.groupBox1.Controls.Add(this.txtGrayHeight);
+            this.groupBox1.Controls.Add(this.txtBlueHeight);
+            this.groupBox1.Controls.Add(this.txtGreenHeight);
+            this.groupBox1.Controls.Add(this.txtRedHeight);
+            this.groupBox1.Controls.Add(this.ptbWhitePerson);
+            this.groupBox1.Controls.Add(this.ptbGrayPerson);
+            this.groupBox1.Controls.Add(this.ptbBluePerson);
+            this.groupBox1.Controls.Add(this.ptbGreenPerson);
+            this.groupBox1.Controls.Add(this.ptbRedPerson);
+            this.groupBox1.Location = new System.Drawing.Point(9, 334);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(552, 182);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Height";
+            // 
+            // txtWhiteHeight
+            // 
+            this.txtWhiteHeight.Location = new System.Drawing.Point(74, 137);
+            this.txtWhiteHeight.Name = "txtWhiteHeight";
+            this.txtWhiteHeight.Size = new System.Drawing.Size(100, 22);
+            this.txtWhiteHeight.TabIndex = 9;
+            // 
+            // txtGrayHeight
+            // 
+            this.txtGrayHeight.Location = new System.Drawing.Point(74, 109);
+            this.txtGrayHeight.Name = "txtGrayHeight";
+            this.txtGrayHeight.Size = new System.Drawing.Size(100, 22);
+            this.txtGrayHeight.TabIndex = 8;
+            // 
+            // txtBlueHeight
+            // 
+            this.txtBlueHeight.Location = new System.Drawing.Point(74, 80);
+            this.txtBlueHeight.Name = "txtBlueHeight";
+            this.txtBlueHeight.Size = new System.Drawing.Size(100, 22);
+            this.txtBlueHeight.TabIndex = 7;
+            // 
+            // txtGreenHeight
+            // 
+            this.txtGreenHeight.Location = new System.Drawing.Point(74, 51);
+            this.txtGreenHeight.Name = "txtGreenHeight";
+            this.txtGreenHeight.Size = new System.Drawing.Size(100, 22);
+            this.txtGreenHeight.TabIndex = 6;
+            // 
+            // txtRedHeight
+            // 
+            this.txtRedHeight.Location = new System.Drawing.Point(74, 22);
+            this.txtRedHeight.Name = "txtRedHeight";
+            this.txtRedHeight.Size = new System.Drawing.Size(100, 22);
+            this.txtRedHeight.TabIndex = 5;
+            // 
+            // ptbWhitePerson
+            // 
+            this.ptbWhitePerson.Location = new System.Drawing.Point(6, 137);
+            this.ptbWhitePerson.Name = "ptbWhitePerson";
+            this.ptbWhitePerson.Size = new System.Drawing.Size(52, 23);
+            this.ptbWhitePerson.TabIndex = 4;
+            this.ptbWhitePerson.TabStop = false;
+            // 
+            // ptbGrayPerson
+            // 
+            this.ptbGrayPerson.Location = new System.Drawing.Point(6, 108);
+            this.ptbGrayPerson.Name = "ptbGrayPerson";
+            this.ptbGrayPerson.Size = new System.Drawing.Size(52, 23);
+            this.ptbGrayPerson.TabIndex = 3;
+            this.ptbGrayPerson.TabStop = false;
+            // 
+            // ptbBluePerson
+            // 
+            this.ptbBluePerson.Location = new System.Drawing.Point(6, 79);
+            this.ptbBluePerson.Name = "ptbBluePerson";
+            this.ptbBluePerson.Size = new System.Drawing.Size(52, 23);
+            this.ptbBluePerson.TabIndex = 2;
+            this.ptbBluePerson.TabStop = false;
+            // 
+            // ptbGreenPerson
+            // 
+            this.ptbGreenPerson.Location = new System.Drawing.Point(6, 50);
+            this.ptbGreenPerson.Name = "ptbGreenPerson";
+            this.ptbGreenPerson.Size = new System.Drawing.Size(52, 23);
+            this.ptbGreenPerson.TabIndex = 1;
+            this.ptbGreenPerson.TabStop = false;
+            // 
+            // ptbRedPerson
+            // 
+            this.ptbRedPerson.Location = new System.Drawing.Point(6, 21);
+            this.ptbRedPerson.Name = "ptbRedPerson";
+            this.ptbRedPerson.Size = new System.Drawing.Size(52, 23);
+            this.ptbRedPerson.TabIndex = 0;
+            this.ptbRedPerson.TabStop = false;
             // 
             // btnGetNumPeople
             // 
@@ -361,7 +461,7 @@
             // 
             // ptbGnd
             // 
-            this.ptbGnd.Location = new System.Drawing.Point(515, 32);
+            this.ptbGnd.Location = new System.Drawing.Point(603, 32);
             this.ptbGnd.Name = "ptbGnd";
             this.ptbGnd.Size = new System.Drawing.Size(244, 128);
             this.ptbGnd.TabIndex = 1;
@@ -369,7 +469,7 @@
             // 
             // ptbPeople
             // 
-            this.ptbPeople.Location = new System.Drawing.Point(515, 195);
+            this.ptbPeople.Location = new System.Drawing.Point(603, 195);
             this.ptbPeople.Name = "ptbPeople";
             this.ptbPeople.Size = new System.Drawing.Size(244, 147);
             this.ptbPeople.TabIndex = 2;
@@ -378,7 +478,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(512, 12);
+            this.label8.Location = new System.Drawing.Point(600, 12);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 15);
             this.label8.TabIndex = 3;
@@ -387,7 +487,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(512, 173);
+            this.label9.Location = new System.Drawing.Point(600, 173);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 15);
             this.label9.TabIndex = 4;
@@ -395,7 +495,7 @@
             // 
             // ptbDetectedPeople
             // 
-            this.ptbDetectedPeople.Location = new System.Drawing.Point(515, 385);
+            this.ptbDetectedPeople.Location = new System.Drawing.Point(603, 385);
             this.ptbDetectedPeople.Name = "ptbDetectedPeople";
             this.ptbDetectedPeople.Size = new System.Drawing.Size(244, 158);
             this.ptbDetectedPeople.TabIndex = 5;
@@ -403,7 +503,7 @@
             // 
             // btnShowDetectedPeople
             // 
-            this.btnShowDetectedPeople.Location = new System.Drawing.Point(515, 356);
+            this.btnShowDetectedPeople.Location = new System.Drawing.Point(603, 356);
             this.btnShowDetectedPeople.Name = "btnShowDetectedPeople";
             this.btnShowDetectedPeople.Size = new System.Drawing.Size(134, 23);
             this.btnShowDetectedPeople.TabIndex = 6;
@@ -411,105 +511,41 @@
             this.btnShowDetectedPeople.UseVisualStyleBackColor = true;
             this.btnShowDetectedPeople.Click += new System.EventHandler(this.btnShowDetectedPeople_Click);
             // 
-            // groupBox1
+            // btnGroundNull
             // 
-            this.groupBox1.Controls.Add(this.txtWhiteHeight);
-            this.groupBox1.Controls.Add(this.txtGrayHeight);
-            this.groupBox1.Controls.Add(this.txtBlueHeight);
-            this.groupBox1.Controls.Add(this.txtGreenHeight);
-            this.groupBox1.Controls.Add(this.txtRedHeight);
-            this.groupBox1.Controls.Add(this.ptbWhitePerson);
-            this.groupBox1.Controls.Add(this.ptbGrayPerson);
-            this.groupBox1.Controls.Add(this.ptbBluePerson);
-            this.groupBox1.Controls.Add(this.ptbGreenPerson);
-            this.groupBox1.Controls.Add(this.ptbRedPerson);
-            this.groupBox1.Location = new System.Drawing.Point(9, 334);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(448, 182);
-            this.groupBox1.TabIndex = 27;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Height";
+            this.btnGroundNull.Location = new System.Drawing.Point(475, 46);
+            this.btnGroundNull.Name = "btnGroundNull";
+            this.btnGroundNull.Size = new System.Drawing.Size(75, 23);
+            this.btnGroundNull.TabIndex = 28;
+            this.btnGroundNull.Text = "NULL";
+            this.btnGroundNull.UseVisualStyleBackColor = true;
+            this.btnGroundNull.Click += new System.EventHandler(this.btnGroundNull_Click);
             // 
-            // ptbRedPerson
+            // btnPeopleNULL
             // 
-            this.ptbRedPerson.Location = new System.Drawing.Point(6, 21);
-            this.ptbRedPerson.Name = "ptbRedPerson";
-            this.ptbRedPerson.Size = new System.Drawing.Size(52, 23);
-            this.ptbRedPerson.TabIndex = 0;
-            this.ptbRedPerson.TabStop = false;
+            this.btnPeopleNULL.Location = new System.Drawing.Point(475, 205);
+            this.btnPeopleNULL.Name = "btnPeopleNULL";
+            this.btnPeopleNULL.Size = new System.Drawing.Size(75, 23);
+            this.btnPeopleNULL.TabIndex = 29;
+            this.btnPeopleNULL.Text = "NULL";
+            this.btnPeopleNULL.UseVisualStyleBackColor = true;
+            this.btnPeopleNULL.Click += new System.EventHandler(this.btnPeopleNULL_Click);
             // 
-            // ptbGreenPerson
+            // btnNewDetector
             // 
-            this.ptbGreenPerson.Location = new System.Drawing.Point(6, 50);
-            this.ptbGreenPerson.Name = "ptbGreenPerson";
-            this.ptbGreenPerson.Size = new System.Drawing.Size(52, 23);
-            this.ptbGreenPerson.TabIndex = 1;
-            this.ptbGreenPerson.TabStop = false;
-            // 
-            // ptbBluePerson
-            // 
-            this.ptbBluePerson.Location = new System.Drawing.Point(6, 79);
-            this.ptbBluePerson.Name = "ptbBluePerson";
-            this.ptbBluePerson.Size = new System.Drawing.Size(52, 23);
-            this.ptbBluePerson.TabIndex = 2;
-            this.ptbBluePerson.TabStop = false;
-            // 
-            // ptbGrayPerson
-            // 
-            this.ptbGrayPerson.Location = new System.Drawing.Point(6, 108);
-            this.ptbGrayPerson.Name = "ptbGrayPerson";
-            this.ptbGrayPerson.Size = new System.Drawing.Size(52, 23);
-            this.ptbGrayPerson.TabIndex = 3;
-            this.ptbGrayPerson.TabStop = false;
-            // 
-            // ptbWhitePerson
-            // 
-            this.ptbWhitePerson.Location = new System.Drawing.Point(6, 137);
-            this.ptbWhitePerson.Name = "ptbWhitePerson";
-            this.ptbWhitePerson.Size = new System.Drawing.Size(52, 23);
-            this.ptbWhitePerson.TabIndex = 4;
-            this.ptbWhitePerson.TabStop = false;
-            // 
-            // txtRedHeight
-            // 
-            this.txtRedHeight.Location = new System.Drawing.Point(74, 22);
-            this.txtRedHeight.Name = "txtRedHeight";
-            this.txtRedHeight.Size = new System.Drawing.Size(100, 22);
-            this.txtRedHeight.TabIndex = 5;
-            // 
-            // txtGreenHeight
-            // 
-            this.txtGreenHeight.Location = new System.Drawing.Point(74, 51);
-            this.txtGreenHeight.Name = "txtGreenHeight";
-            this.txtGreenHeight.Size = new System.Drawing.Size(100, 22);
-            this.txtGreenHeight.TabIndex = 6;
-            // 
-            // txtBlueHeight
-            // 
-            this.txtBlueHeight.Location = new System.Drawing.Point(74, 80);
-            this.txtBlueHeight.Name = "txtBlueHeight";
-            this.txtBlueHeight.Size = new System.Drawing.Size(100, 22);
-            this.txtBlueHeight.TabIndex = 7;
-            // 
-            // txtGrayHeight
-            // 
-            this.txtGrayHeight.Location = new System.Drawing.Point(74, 109);
-            this.txtGrayHeight.Name = "txtGrayHeight";
-            this.txtGrayHeight.Size = new System.Drawing.Size(100, 22);
-            this.txtGrayHeight.TabIndex = 8;
-            // 
-            // txtWhiteHeight
-            // 
-            this.txtWhiteHeight.Location = new System.Drawing.Point(74, 137);
-            this.txtWhiteHeight.Name = "txtWhiteHeight";
-            this.txtWhiteHeight.Size = new System.Drawing.Size(100, 22);
-            this.txtWhiteHeight.TabIndex = 9;
+            this.btnNewDetector.Location = new System.Drawing.Point(382, 10);
+            this.btnNewDetector.Name = "btnNewDetector";
+            this.btnNewDetector.Size = new System.Drawing.Size(168, 23);
+            this.btnNewDetector.TabIndex = 30;
+            this.btnNewDetector.Text = "Create New Detector";
+            this.btnNewDetector.UseVisualStyleBackColor = true;
+            this.btnNewDetector.Click += new System.EventHandler(this.btnNewDetector_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 555);
+            this.ClientSize = new System.Drawing.Size(863, 555);
             this.Controls.Add(this.btnShowDetectedPeople);
             this.Controls.Add(this.ptbDetectedPeople);
             this.Controls.Add(this.label9);
@@ -521,16 +557,16 @@
             this.Text = "Human Detection";
             this.simpleTestBox.ResumeLayout(false);
             this.simpleTestBox.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbWhitePerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbGrayPerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBluePerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbGreenPerson)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRedPerson)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbGnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbPeople)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDetectedPeople)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbRedPerson)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbGreenPerson)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbBluePerson)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbGrayPerson)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbWhitePerson)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,6 +619,9 @@
         private System.Windows.Forms.PictureBox ptbBluePerson;
         private System.Windows.Forms.PictureBox ptbGreenPerson;
         private System.Windows.Forms.PictureBox ptbRedPerson;
+        private System.Windows.Forms.Button btnGroundNull;
+        private System.Windows.Forms.Button btnPeopleNULL;
+        private System.Windows.Forms.Button btnNewDetector;
     }
 }
 

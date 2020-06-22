@@ -14,6 +14,7 @@ namespace WinFormTest
     public partial class Form1 : Form
     {
         DataAccess data;
+        public const int TFL_FRAME_SIZE = 640 * 480;
 
         void InitPtb(PictureBox ptb, Color c)
         {
@@ -78,6 +79,10 @@ namespace WinFormTest
                 ptbGnd.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 ClearRstGnd();
+            }
+            else
+            {
+                data.initDepth_buf = null;
             }
         }
 
@@ -235,6 +240,27 @@ namespace WinFormTest
                     ptbDetectedPeople.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
             }
+        }
+
+        private void btnGroundNull_Click(object sender, EventArgs e)
+        {
+            data.initDepth_buf = null;
+            txtRawGndFileName.Text = "null";
+        }
+
+        private void btnPeopleNULL_Click(object sender, EventArgs e)
+        {
+            data.Depth_buf = null;
+            txtPeopleRawFileName.Text = "null";
+        }
+
+        private void btnNewDetector_Click(object sender, EventArgs e)
+        {
+            data.pplDtc = new PeopleDetector();
+            data.initDepth_buf = new ushort[TFL_FRAME_SIZE];
+            data.Depth_buf = new ushort[TFL_FRAME_SIZE];
+            data.groundCloud = new List<TFL_PointXYZ>();
+            MessageBox.Show("New Detector created successfully");
         }
     }
 }
